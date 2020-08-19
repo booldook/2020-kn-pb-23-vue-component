@@ -1,7 +1,7 @@
 <template lang="pug">
 	div#app.container
 		nav-bar
-		search-bar
+		search-bar(v-on:@submit="onSubmit")
 </template>
 
 <script>
@@ -10,9 +10,19 @@ import SearchBar from '@/components/SearchBar.vue'
 
 export default {
 	name: 'app',
+	data() {
+		return {
+			search: ''
+		}
+	},
 	components: {
 		'nav-bar': NavBar,
 		'search-bar': SearchBar,
+	},
+	methods: {
+		onSubmit(value) {
+			this.search = value;
+		}
 	}
 }
 </script>

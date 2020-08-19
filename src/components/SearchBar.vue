@@ -14,7 +14,8 @@ export default {
 	},
 	methods: {
 		onSubmit() {
-
+			// 자식이 부모에게 데이터를 전달하려면 이벤트형식으로 전달해야 한다.
+			this.$emit('@submit', this.search);
 		},
 		onReset() {
 			this.search = '';
