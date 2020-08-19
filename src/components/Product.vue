@@ -1,6 +1,6 @@
 <template lang="pug">
 	.prd
-		img.w-100(v-bind:src="`/assets/img/${content.src}`")
+		img.w-100(v-bind:src="require(`@/assets/img/${content.src}`)")
 		.title {{content.title}}
 		.price {{content.price}}
 </template>
