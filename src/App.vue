@@ -1,11 +1,16 @@
 <template lang="pug">
 	div#app
-		h1 Hello World
+		nav-bar
 </template>
 
 <script>
+import NavBar from '@/components/NavBar.vue'
+
 export default {
-	
+	name: 'app',
+	components: {
+		'nav-bar': NavBar,
+	}
 }
 </script>
 
