@@ -2,7 +2,8 @@
 	div#app.container
 		nav-bar
 		search-bar(v-on:@submit="onSubmit")
-		product-wrapper(v-show="search.length")
+		//- 부모가 자식에게 데이터를 전달할 때는 Propertie(v-bind)로 전달한다.
+		product-wrapper(v-show="search.length" v-bind:search="search")
 </template>
 
 <script>
