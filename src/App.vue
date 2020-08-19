@@ -2,7 +2,7 @@
 	div#app.container
 		nav-bar
 		search-bar(v-on:@submit="onSubmit")
-		product-wrapper
+		product-wrapper(v-show="search.length")
 </template>
 
 <script>

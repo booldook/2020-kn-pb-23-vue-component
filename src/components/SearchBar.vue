@@ -19,6 +19,7 @@ export default {
 		},
 		onReset() {
 			this.search = '';
+			this.$emit('@submit', this.search);
 		}
 	}
 }
