@@ -18,5 +18,5 @@ export default {
 </script>
 
 <style lang="less">
-
+	.prd-wrapper {display: flex; flex-wrap: wrap;}
 </style>

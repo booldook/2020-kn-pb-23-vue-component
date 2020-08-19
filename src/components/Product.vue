@@ -16,15 +16,15 @@ export default {
 	@767: ~"(max-width: 767px)";
 	@575: ~"(max-width: 575px)";
 	.prd {
-		flex: 25%; padding: 1%; width: 25%;
+		flex: 25% 0 0; padding: 1%; width: 25%;
 		@media @991 {
-			flex: 33.3333%; width: 33.3333%;
+			flex: 33.3333% 0 0; width: 33.3333%;
 		}
 		@media @767 {
-			flex: 50%; width: 50%; padding: 2%;
+			flex: 50% 0 0; width: 50%; padding: 2%;
 		}
 		@media @575 {
-			flex: 100%; width: 100%;
+			flex: 100% 0 0; width: 100%;
 		}
 	}
 </style>
